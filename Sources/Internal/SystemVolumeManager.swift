@@ -83,7 +83,7 @@ internal extension SystemVolumeManager {
 	/// Observe changes in volume.
 	///
 	/// This method is called when the user presses either of the volume buttons.
-	override internal func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
+	override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
 		let volume = AVAudioSession.sharedInstance().outputVolume
 		volumeChanged(to: volume)
 	}
