@@ -63,7 +63,7 @@ public final class VolumeBar {
 	// MARK: Internal
 	internal var window: VolumeBarWindow?
 	internal var timer: Timer?
-	internal var systemVolumeManager: SystemVolumeManager?
+	public var systemVolumeManager: SystemVolumeManager?
 }
 
 public extension VolumeBar {
