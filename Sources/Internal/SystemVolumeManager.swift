@@ -29,7 +29,7 @@ import AVFoundation
 	func volumeChanged(to volume: Float)
 }
 
-internal final class SystemVolumeManager: NSObject {
+public final class SystemVolumeManager: NSObject {
 	fileprivate let observers: NSHashTable<SystemVolumeObserver>
 	fileprivate var isObservingSystemVolumeChanges: Bool = false
 	
